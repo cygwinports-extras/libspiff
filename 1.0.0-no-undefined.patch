@@ -1,0 +1,11 @@
+--- origsrc/libspiff-1.0.0/Makefile.am	2008-09-21 13:33:39.000000000 -0500
++++ src/libspiff-1.0.0/Makefile.am	2008-09-23 23:04:08.238122800 -0500
+@@ -24,7 +24,7 @@
+ 
+ 
+ 
+-libspiff_la_LDFLAGS = -version-info 4:0:0
++libspiff_la_LDFLAGS = -version-info 4:0:0 -no-undefined
+ 
+ libspiff_la_SOURCES = \
+ 	src/SpiffChunkCallback.cpp \

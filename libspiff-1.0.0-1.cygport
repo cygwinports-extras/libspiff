@@ -1,0 +1,11 @@
+DESCRIPTION="XSPF playlist support library"
+HOMEPAGE="http://libspiff.sourceforge.net/"
+SRC_URI="mirror://sourceforge/libspiff/${P}.tar.lzma"
+PATCH_URI="1.0.0-no-undefined.patch"
+
+abi=4
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="bin dll devel"
+PKG_CONTENTS[0]="usr/bin/*.exe usr/share/doc/"
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
